@@ -19,6 +19,14 @@
         </template>
       </ul>
     </div>
+    <div class="flex flex-col gap-4">
+      <Suspense>
+        <CityList />
+        <template #fallback>
+          <p>Loading...</p>
+        </template>
+      </Suspense>
+    </div>
   </main>
 </template>
 
@@ -27,6 +35,8 @@
 import { ref } from "vue";
 import axios from "axios";
 import { useRouter } from "vue-router";
+import CityList from "../components/CityList.vue"
+
 const searchQuery = ref("")
 const queryTimeout = ref(null)
 const mapboxSearchResults = ref(null)
@@ -46,9 +56,10 @@ const previewCity = (searchResult) => {
     params: {state: state.replaceAll(" ", ""), city: city},
     query: {
       lat: lat,
-      long: long
+      long: long,
+      preview: true,
     },
-    preview: true,
+    
   })
 }
 
