@@ -5,7 +5,7 @@
 ### Here is an image of the app (not hosted due to mapbox charging for api usage):
 
 Home page:
-![Home Page]("./src/assets/homepage.png")
+![Home Page](https://github.com/garizola/vue-weather-app/blob/main/src/assets/homepage.png)
 
 Detail page:
-![Detail Page]("./src/assets/detailpage.png")
+![Detail Page](https://github.com/garizola/vue-weather-app/blob/main/src/assets/detailpage.png)
