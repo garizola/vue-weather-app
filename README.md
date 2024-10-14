@@ -1,6 +1,6 @@
 # Current Weather Application
 
-- Using Vue, Axios w/ Open Weather & Mapbox, and Tailwind
+- Using Vue, Axios w/ Open Weather & Mapbox, and TailwindCSS
 
 ### Here is an image of the app (not hosted due to mapbox charging for api usage):
 
